@@ -21,8 +21,9 @@ The package's index file (barrel) re-exports the components directly:
 - `ScopeChipComponent` — a coloured chip labelling a data scope.
 - `CollapsibleSectionComponent` — an expandable titled section.
 - `AvatarCircleComponent` — a circular initials/avatar badge.
+- `AvatarCircleSize` — the supported named sizes for avatar presentation.
 - `LedgerCardComponent` — one card in an agent action/observation ledger.
-- `SectionHeadingComponent`, `SettingsRowComponent`, `SaveButtonComponent` — settings-form primitives.
+- `SectionHeadingComponent` — a reusable heading for grouped controls.
 
 ## Boundary
 
@@ -33,8 +34,7 @@ before writing it a third time.
 ## Dependency direction
 
 Tagged `scope:web` (the frontend dependency tier): it may import only other `scope:web` packages
-and `scope:shared` contracts. In practice it depends only on `@opencrane/core` for shared types and
-colour tokens.
+and `scope:shared` contracts. Its components remain domain-neutral and do not define API contracts.
 
 ## See also
 

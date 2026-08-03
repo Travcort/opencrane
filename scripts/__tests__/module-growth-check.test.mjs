@@ -56,6 +56,7 @@ test("excludes tests, generated output, dependencies, and fixtures", () =>
 	assert.equal(isProductionSource("services/api/src/test/java/Foo.java", _SourceExtensions), false);
 	assert.equal(isProductionSource("services/indexer/spec/indexer_spec.rb", _SourceExtensions), false);
 	assert.equal(isProductionSource("scripts/topology-negative-tests.sh", _SourceExtensions), false);
+	assert.equal(isProductionSource("ui_designs/project/support.js", _SourceExtensions), false);
 });
 
 test("warns when a change adds a large cohesive-review candidate", () =>

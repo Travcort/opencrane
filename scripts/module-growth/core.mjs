@@ -12,6 +12,7 @@ const _ExcludedPathParts = [
 	"/spec/",
 	"/test/",
 	"/tests/",
+	"/ui_designs/",
 	"/vendor/",
 	"/website/public/",
 ];
